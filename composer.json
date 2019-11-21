@@ -1,6 +1,8 @@
 {
     "name": "starshums/jdejulianconverter",
     "description": "A Laravel library that converts a given Oracle JD Edwards Julian date to the standard Gregorian date.",
+    "type": "library",
+    "keywords": ["laravel", "julian", "converter"],
     "require": {
     },
     "require-dev": {
@@ -14,7 +16,10 @@
         "laravel": {
             "providers": [
                 "starshums\\jdejulianconverter\\JDEJulianConverterServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "JJC": "starshums\\jdejulianconverter\\JDEJulianConverter"
+            }
         }
     },
     "license": "MIT",
@@ -24,5 +29,6 @@
             "email": "chemsed.dinerachidi@gmail.com"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
