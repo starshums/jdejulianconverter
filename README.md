@@ -1,4 +1,4 @@
-# Laravel Oracle JD Edwards Julian date converter for Laravel 5
+# Oracle JD Edwards Julian date converter for Laravel 5
 
 A Laravel library that converts a given Oracle JD Edwards Julian date to the standard Gregorian date.  
 Date fields in JD Edwards are stored in the Julian format where the date format is CYYDDD  
