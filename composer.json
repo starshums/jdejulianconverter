@@ -23,5 +23,6 @@
             "name": "starshums",
             "email": "chemsed.dinerachidi@gmail.com"
         }
-    ]
+    ],
+    "minimum-stability": "stable"
 }
