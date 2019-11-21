@@ -2,7 +2,7 @@
 
 A Laravel library that converts a given Oracle JD Edwards Julian date to the standard Gregorian date.  
 Date fields in JD Edwards are stored in the Julian format where the date format is CYYDDD  
-For more information on this format visit this [page](https://docs.oracle.com/cd/E26228_01/doc.93/e21961/julian_date_conv.htm)
+For more information on this format please visit this [page](https://docs.oracle.com/cd/E26228_01/doc.93/e21961/julian_date_conv.htm)
 
 ## Installation
 
