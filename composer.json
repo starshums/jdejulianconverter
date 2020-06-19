@@ -30,6 +30,5 @@
             "email": "chemsed.dinerachidi@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "prefer-stable": true
 }
