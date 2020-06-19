@@ -7,8 +7,7 @@ namespace starshums\jdejulianconverter;
  *
  * @author SHUMS
  */
-class JDEJulianConverter
-{
+class JDEJulianConverter {
     /**
      * Returns a list of numbers representing the days of the julian date system
      * based on a start parameter which represents the start of the month.
@@ -18,13 +17,11 @@ class JDEJulianConverter
      *
      * @return array
      */
-    public function getMonth($start, $end)
-    {
+    public function getMonth($start, $end) {
         $month = [];
         for ($i = 0; $i < $end; ++$i) {
             array_push($month, ++$start);
         }
-
         return $month;
     }
 
@@ -38,11 +35,9 @@ class JDEJulianConverter
      *
      * @return string
      */
-    public function getDate($days, $month_array, $month, $year)
-    {
+    public function getDate($days, $month_array, $month, $year) {
         $day = array_search($days, $month_array) + 1;
         $day = str_pad($day, 2, '0', STR_PAD_LEFT);
-
         return ($month >= 10) ? $year.'-'.$month.'-'.$day : $year.'-0'.$month.'-'.$day;
     }
 
@@ -53,11 +48,10 @@ class JDEJulianConverter
      *
      * @return string
      */
-    public function Convert($julian_date)
-    {
+    public function Convert($julian_date) {
 		if (strlen($julian_date) == 5) {
             $julian_date = "1" . $julian_date;
-       }
+	    }
 
         $array = str_split($julian_date);
         $century = $array[0];
@@ -145,7 +139,7 @@ class JDEJulianConverter
             break;
 
             default:
-            return '1995-09-26 00:00:00'; // this is the default date, I added this because I needed it for my project, (MySql Date)
+            return '1960-01-01 00:00:00'; // default date (MySQL date)
             break;
         }
     }
