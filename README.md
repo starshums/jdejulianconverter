@@ -11,17 +11,6 @@ Require this package in your composer.json and update composer.
 ```bash
 composer require starshums/jdejulianconverter
 ```
-If you encounter any errors during this step such as :
-```bash
-[InvalidArgumentException]
-  Could not find a version of package starshums/jdejulianconverter matching your minimum-stability (stable).
-  Require it with an explicit version constraint allowing its desired stability.
-```
-Then please make sure to update your composer.json by adding these two lines :
-```php
-"minimum-stability": "dev",
-"prefer-stable": true
-```
 and then update composer :
 ```bash
 composer update
