@@ -49,9 +49,9 @@ class JDEJulianConverter {
      * @return string
      */
     public function Convert($julian_date) {
-		if (strlen($julian_date) == 5) {
-			$julian_date = "1" . $julian_date;
-	    }
+	if (strlen($julian_date) == 5) {
+	    $julian_date = "1" . $julian_date;
+	}
 
         $array = str_split($julian_date);
         $century = $array[0];
