@@ -1,10 +1,10 @@
-# Oracle JD Edwards Julian date converter for Laravel 5
+# :clipboard:  Oracle JD Edwards Julian date converter for Laravel 5
 
 A Laravel library that converts a given Oracle JD Edwards Julian date to the standard Gregorian date.  
 Date fields in JD Edwards are stored in the Julian format where the date format is CYYDDD  
 For more information on this format please visit this [page](https://docs.oracle.com/cd/E26228_01/doc.93/e21961/julian_date_conv.htm)
 
-## Installation
+## :grey_question: Installation
 
 Require this package in your composer.json and update composer.
 
@@ -24,17 +24,17 @@ You also need to add the alias. Add this to your aliases:
 'JJC' => starshums\jdejulianconverter\JDEJulianConverter::class,
 ```
 
-## Usage
+## :open_book: Usage
 
 ```php
 $converter = new \JJC;
 $date = $converter->Convert(110123); // expected result : 2010-05-03
 ```
 
-## Contributing
+## :handshake: Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
-## License
+## :page_with_curl: License
 [MIT](https://opensource.org/licenses/MIT)
